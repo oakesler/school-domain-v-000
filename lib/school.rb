@@ -14,8 +14,8 @@ class School
   end
   
   def new 
-    ROSTERS.clear
     binding.pry
+    ROSTERS.clear
   end
 
   def add_student(name, grade)
