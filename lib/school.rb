@@ -10,12 +10,19 @@ class School
   end
 
   def roster 
+    @ROSTERS = ROSTERS
     ROSTERS
+  end
+  
+  def new 
+    ROSTERS.delete
   end
 
   def add_student(name, grade)
     @ROSTERS = ROSTERS
     #ROSTERS[grade] ||= ROSTERS[grade] = [ ]
+    
+    
     if ROSTERS[grade] == nil && ROSTERS.include?(name) == false
       ROSTERS[grade] = [ ]
       ROSTERS[grade] << name
@@ -32,9 +39,9 @@ class School
   def sort
     #@ROSTERS = rosters
     #ROSTERS.sort_by{|k, v| [v, k]}.to_h
-    ROSTERS.map do |key|
-      binding.pry
-      ROSTERS["#{key[0]}"].sort
+    ROSTERS.each do |key|
+      #binding.pry
+      ROSTERS[key[0]].sort
     end
   end
 end
