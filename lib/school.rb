@@ -7,7 +7,7 @@ class School
   
   def initialize(name)
     @name = name
-    ROSTERS = {}
+    ROSTERS.clear
   end
 
   def roster 
