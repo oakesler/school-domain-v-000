@@ -14,7 +14,7 @@ class School
   end
   
   def new 
-    ROSTERS.delete.all
+    ROSTERS.clear
   end
 
   def add_student(name, grade)
