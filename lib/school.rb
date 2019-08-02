@@ -18,7 +18,7 @@ class School
   end
 
   def add_student(name, grade)
-    @ROSTERS = ROSTERS
+    #@ROSTERS = ROSTERS
     #ROSTERS[grade] ||= ROSTERS[grade] = [ ]
     
     
