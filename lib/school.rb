@@ -14,7 +14,6 @@ class School
   end
   
   def new 
-    binding.pry
     ROSTERS.clear
   end
 
