@@ -18,11 +18,8 @@ class School
   end
 
   def add_student(name, grade)
-    #@ROSTERS = ROSTERS
     #ROSTERS[grade] ||= ROSTERS[grade] = [ ]
-    
-    
-    if ROSTERS[grade] == nil && ROSTERS.include?(name) == false
+    if ROSTERS[grade] == nil
       ROSTERS[grade] = [ ]
       ROSTERS[grade] << name
     elsif ROSTERS[grade] != nil && ROSTERS[grade].include?(name) == false
