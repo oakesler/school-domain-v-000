@@ -40,7 +40,7 @@ class School
     #ROSTERS.sort_by{|k, v| [v, k]}.to_h
     ROSTERS.each do |key|
       #binding.pry
-      ROSTERS[key[0]].sort{}
+      ROSTERS[key[0]].sort!
     end
   end
 end
